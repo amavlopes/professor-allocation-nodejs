@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "amandalopes",
+    "password": "123456",
+    "database": "professor_allocation_dev",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "amandalopes",
+    "password": "123456",
+    "database": "professor_allocation_test",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "amandalopes",
+    "password": "123456",
+    "database": "professor_allocation_prd",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
