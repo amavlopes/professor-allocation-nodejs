@@ -16,7 +16,7 @@ module.exports = {
       cpf: {
         allowNull: false,
         unique: true,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(11),
       },
       createdAt: {
         allowNull: false,
@@ -25,6 +25,16 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
+      },
+      departmentId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Departments",
+          },
+          key: "id",
+        },
       },
     });
   },

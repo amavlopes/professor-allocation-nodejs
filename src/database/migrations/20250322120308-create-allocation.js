@@ -29,6 +29,26 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
+      professorId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Professors",
+          },
+          key: "id",
+        },
+      },
+      courseId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: "Courses",
+          },
+          key: "id",
+        },
+      },
     });
   },
   async down(queryInterface, Sequelize) {
