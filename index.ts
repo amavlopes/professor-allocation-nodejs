@@ -1,6 +1,11 @@
 import express from "express";
 import sequelize from "./src/db/conn";
 
+const Department = require("./src/app/models/department");
+const Professor = require("./src/app/models/professor");
+const Course = require("./src/app/models/course");
+const Allocation = require("./src/app/models/allocation");
+
 const PORT = 3300;
 const app = express();
 
